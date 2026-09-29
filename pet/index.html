@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsome Grooming | Premium Pet Care</title>
+    <meta name="description" content="Friendly and professional pet grooming services. Book an appointment today for a happy, clean pet!">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🐾 Pawsome</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+        <a href="#booking" class="clay-btn primary">Book Now</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Pamper Your Pet Like Royalty!</h1>
+            <p>Professional grooming services with a lot of love, bubbly baths, and warm hugs.</p>
+            <a href="#booking" class="clay-btn primary pulse">Schedule an Appointment</a>
+        </div>
+        <div class="hero-image clay-card">
+            <img src="hero_dog.jpg" alt="Happy golden retriever in a bubble bath">
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Our Grooming Packages</h2>
+        <div class="packages-grid">
+            <div class="clay-card package-card">
+                <div class="package-icon">🛁</div>
+                <h3>The Bubble Bath</h3>
+                <p class="price">$35</p>
+                <ul>
+                    <li>Warm bath & blow dry</li>
+                    <li>Nail trimming</li>
+                    <li>Ear cleaning</li>
+                </ul>
+                <button class="clay-btn secondary">Select</button>
+            </div>
+            <div class="clay-card package-card featured">
+                <div class="package-icon">✂️</div>
+                <h3>The Full Pawsome</h3>
+                <p class="price">$65</p>
+                <ul>
+                    <li>Everything in Bubble Bath</li>
+                    <li>Full body haircut</li>
+                    <li>Paw pad treatment</li>
+                </ul>
+                <button class="clay-btn primary">Select</button>
+            </div>
+            <div class="clay-card package-card">
+                <div class="package-icon">🌟</div>
+                <h3>The VIP Spa</h3>
+                <p class="price">$90</p>
+                <ul>
+                    <li>Everything in Full Pawsome</li>
+                    <li>Blueberry facial</li>
+                    <li>Teeth brushing</li>
+                </ul>
+                <button class="clay-btn secondary">Select</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Happy Paws Gallery</h2>
+        <div class="gallery-grid">
+            <div class="clay-card gallery-item">
+                <img src="gallery_cat.jpg" alt="Cute fluffy kitten">
+            </div>
+            <div class="clay-card gallery-item">
+                <img src="gallery_pug.jpg" alt="Happy pug at the salon">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Pet Parents Say</h2>
+        <div class="testimonial-grid">
+            <div class="clay-card testimonial-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p class="quote">"My golden retriever loves bath time now! The team is so gentle and the bubble bath smells amazing."</p>
+                <p class="author">- Sarah & Max</p>
+            </div>
+            <div class="clay-card testimonial-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p class="quote">"They managed to make my grumpy cat look like a cute little lion. Highly recommend the VIP spa!"</p>
+                <p class="author">- Mike & Luna</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="clay-card booking-container">
+            <h2>Book an Appointment</h2>
+            <p>Ready to treat your furry friend? Fill out the form below!</p>
+            <form id="bookingForm">
+                <div class="input-group">
+                    <label for="ownerName">Your Name</label>
+                    <input type="text" id="ownerName" required class="clay-input" placeholder="John Doe">
+                </div>
+                <div class="input-group">
+                    <label for="petName">Pet's Name</label>
+                    <input type="text" id="petName" required class="clay-input" placeholder="Buddy">
+                </div>
+                <div class="input-group">
+                    <label for="package">Select Package</label>
+                    <select id="package" class="clay-input">
+                        <option value="bath">The Bubble Bath ($35)</option>
+                        <option value="full">The Full Pawsome ($65)</option>
+                        <option value="vip">The VIP Spa ($90)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" required class="clay-input">
+                </div>
+                <button type="submit" class="clay-btn primary full-width">Confirm Booking</button>
+            </form>
+            <div id="successMessage" class="success-message hidden">
+                <h3>🎉 Booking Confirmed!</h3>
+                <p>We'll see you and your pet soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>🐾 Pawsome Grooming &copy; 2026</p>
+        <p>123 Pet Lane, Fluffytown | (555) 123-PAWS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
